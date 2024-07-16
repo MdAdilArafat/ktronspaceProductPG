@@ -1,0 +1,366 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px
+   
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+/* 
+<---   navbar1 starts ---> */
+.navbar1{
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    background-color:transparent;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 255, .2);
+}
+.change-bg{
+    background-color: black;
+    transition: all 1s;
+    box-shadow: none;
+    border: none;
+}
+.change-col{
+    color: white !important;
+   
+}
+
+.navbar1 ul{
+    display: flex;
+    list-style: none;
+   color: black;
+    margin: 12px 20px;
+
+   
+}
+.navbar1 ul li{
+    width: 100px;
+    padding-top: 35px;
+
+  
+    
+}
+.navbar1 ul li a{
+    padding: 15px 0 17px;
+    text-decoration: none;
+   color: black;
+    font-weight: 500;
+    font-size: 17px
+}
+.dropdown1{
+    display: none
+}
+.logo{
+    padding-top: 20px;
+    margin-right: 10px;
+
+}
+
+.navbar1 ul li:hover .dropdown1 {
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left:-15px;
+    background-color: whitesmoke;
+}
+.navbar1 ul li:hover .dropdown1 ul{
+    display: block;
+    margin: 10px;
+   
+}
+.navbar1 ul li:hover .dropdown1 ul li{
+    width: 150px;
+    padding: 10px;
+}
+.navbar1 ul li:hover .dropdown1 ul li a{
+    color: black;
+}
+.navbar1 ul li:hover .dropdown1 ul li a:hover{
+    color: red;
+}
+
+.icon{
+    margin: 12px 9px 0 9px 
+}
+
+.dif{
+    padding-left: 10px;
+    display: flex;
+}
+
+/* 
+<---   navbar1 ends ---> */
+
+
+/* <------ slider Starts  -----> */
+
+
+/* @keyframes slider {
+    0%  {
+       background-image: url(/Resources/backgound-image/b1.webp);
+     
+    }
+    25%  {
+      background-image: url(/Resources/backgound-image/b2.webp);
+    
+    }
+    50%  { 
+      background-image: url(/Resources/backgound-image/b3.webp);
+  
+    }
+    75%  {
+      background-image: url(/Resources/backgound-image/b4.webp);
+      
+    }
+    100%  {
+      background-image: url(/Resources/backgound-image/b5.webp);
+    
+    }
+  } */
+
+  .slides{
+
+  
+    width: 100%;
+    height: 110px;
+    position: relative;
+    /* animation-name: slider;
+    animation-delay: 1s;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+    
+    
+}
+/* <------ slider Ends  -----> */
+
+
+.size{
+    width: 194px;
+}
+
+/* Blog Starts */
+hr{
+    margin-left: 0;
+    margin-right: 0;
+    height: 1px;
+    color: #cecdcd;
+    width: 40%;
+    
+}
+.P{
+    font-size: 12px !important;
+}
+.h{
+    font-size: 16px;
+}
+.n{
+    font-size: 46px;
+}
+/*  Blog Ends */
+
+/* footer Starts */
+.content .container-fluid .row .col .addrss span{
+    float: left;
+    display: block;
+    width: 20px;
+    height: 24px;
+    background: url(//ueeshop.ly200-cdn.com/static/v1/themes/visual/cusvis_mode/footer/mode_229_1/images/icon_addr.png) no-repeat left center;
+    margin-right: 10px 
+}
+.content .container-fluid .row .col .msg span{
+    float: left;
+    display: block;
+    width: 20px;
+    height: 24px;
+    background: url(https://ueeshop.ly200-cdn.com/static/v1/themes/visual/cusvis_mode/footer/mode_229_1/images/icon_mail.png) no-repeat left center;
+    margin-right: 10px 
+}
+/* footer Ends */
+
+/* animation Strats */
+.hover-y{
+    transform: translateY(0);
+    transition: transform .5s ease-out;
+}
+.hover-y:hover{
+    transform: translateY(-10px);
+}
+.hover-x{
+    transform: translate(-50%,-50%);
+    transition: transform .5s ease-out;
+}
+.hover-x:hover{
+    transform: translate(-53%,-50%);
+}
+/* animation Ends */
+
+
+
+/*   ImageZoomAnimation starts */
+
+.slideshow-items {
+    width: 500px;
+  }
+  .slideshow-thumbnails {
+    width: 100px;
+  }
+  /* #result{
+    background-position: center;
+    width: 300px;
+    height: 300px ;
+  } */
+  #slideshow-items-container { display: inline-block; position: relative; }
+  
+  #lens { background-color: rgba( 233, 233, 233, 0.4 );
+    /* width: 100px;
+    height: 100px ;                  */
+}
+  #lens, #result { position: absolute; display: none; z-index: 1; }
+  .slideshow-items { display: none; }
+  .slideshow-items.active { display: block; }
+  .slideshow-thumbnails { opacity: 0.5; }
+  .slideshow-thumbnails.active { opacity: 1; }
+  #lens, .slideshow-items, .slideshow-thumbnails, #result { border: solid var(--light-grey-2) 1px; }
+  
+
+  /*   ImageZoomAnimation Ends */
+ 
+
+  @media (max-width:993px) {
+
+    /* navbar & Sliders starts */
+    .nav2{
+        scroll-behavior: smooth;
+        background-color:#fff;;
+        right: 0;
+        display: flex;
+        font-size: 16px;
+        line-height: 6px;
+        top: 100%;
+        flex-direction: column;
+        position: absolute;
+        width: 0%;
+        height: 100vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 50px;
+        /* display: none; */
+        transition: width .5s ease;
+        
+
+       
+    }
+    .dif div{
+        display: none;
+     }
+    .navbar1 ul .nav2 li{
+        display: flex;
+        margin: 0 0 0 15px;
+        width: 100%;
+        height: 65px;
+        border-bottom: 1px solid lightgray;
+    }
+    .navbar1 ul .nav2 li a{
+        color: #333;
+    }
+    .dif{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .dif li a{
+        width: 100%;
+        font-size: 16px;
+        padding: 0 0 12px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .navbar1 {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-bottom: 1px solid  lightgrey;
+
+        
+        
+    }
+
+    .icons{
+        position: absolute;
+        right: 40px;
+        /* top: 50%; */
+        display: flex;
+        flex-direction: row;
+        color: #333;
+        font-size: 40px;
+        margin: 0 1px;
+        text-align: center;
+        margin-top: 15px;
+        /* display: none; */
+    }
+    
+    .icons .bx-x{
+        display: none ;
+        /* color: #333; */
+    }
+    .navbar1 ul li:hover .dropdown1,.navbar1 ul li:hover .dropdown1 ul{
+        display: none;
+    }
+    .slides{
+        background-position: center;
+        height: 70vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
